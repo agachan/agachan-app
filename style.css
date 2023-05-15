@@ -44,7 +44,7 @@ li{
 .sec-title {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 30px;
 }
 
 /* header */
@@ -56,6 +56,7 @@ li{
     margin: 0 auto;
     padding: 0px 4%;
     height: 170px;
+    margin-top: 0px;
 }
 
 #header ul{
@@ -82,17 +83,18 @@ li{
     width: 30px;
 }
 
-/* abount */
-#about ul{
-    margin-bottom: 30px;
+/* about */
+.about-me{
+    padding: 0px 100px;
 }
 
-#about ul li:first-child{
-    margin-bottom: 30px;
+.about-me dt{
+    padding-top: 20px;
 }
-
-#about li {
-    margin-bottom: 3px;
+.about-me dd{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.2rem;
 }
 
 /* works */
@@ -123,14 +125,17 @@ li{
   
   
   .card{
-   
     /* 注目 */
     width: calc((100% - 20px * 1) / 2);  
-    
     height: auto;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,.2)
+  }
+  .card:hover{
+    transform: scale(1.1,1.1);
+    opacity: 0.7;
+    transition: 0.3s;
   }
   
   .card__imgframe{
@@ -194,14 +199,34 @@ li{
         line-height: 40px;
         margin-top: 20px;
     }
-    #header li{
+    #header ul li{
         font-size: 0.8rem;
         margin-top: 20px;
         margin-left: 20px;
     }
-    #header li img .icon{
+    #header ul li img .icon{
         width: 20px;
         margin-top: 5px;
+    }
+
+    .wrapper{
+        margin-bottom: 30px;
+    }
+    .sec-title{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* about */
+    .about-me{
+        padding-left: 30px;
+    }
+    .about-me dt{
+        padding-top: 10px;
+        font-size: 0.8rem;
+    }
+    .about-me dd{
+        font-size: 1rem;
     }
 
     /* works */

@@ -1,0 +1,230 @@
+html{
+    font-size: 100%; /* 16px */
+}
+
+body{
+    color: #24292e;
+    font-family: "Sawarabi Mincho";
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.site-title{
+    line-height: 1px;
+    font-weight: 600;
+    font-size: 2.4rem
+}
+.site-title a{
+    color: #24292e;
+    display: block;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/* header */
+#header{
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0px 4%;
+    height: 170px;
+}
+
+#header ul{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+#header ul li{
+    font-size: 0.9rem;
+    margin-left: 30px;
+}
+
+#header ul li a{
+    color: #24292e;
+    transition: all 0.3s;
+}
+
+#header ul li a:hover{
+    opacity: 0.5;
+}
+
+#header li img.icon{
+    width: 30px;
+}
+
+/* abount */
+#about ul{
+    margin-bottom: 30px;
+}
+
+#about ul li:first-child{
+    margin-bottom: 30px;
+}
+
+#about li {
+    margin-bottom: 3px;
+}
+
+/* works */
+.card-group{
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 640px;
+    width: 90%;
+    height: auto;
+    
+     /* 注目 */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  /* 注目 */
+  .card-group > :nth-child(2n){
+    margin-left: 20px;
+  }  
+  /* 注目 */
+  .card-group > :nth-child(n+3){
+    margin-top: 20px;
+  }  
+  
+  
+  
+  .card{
+   
+    /* 注目 */
+    width: calc((100% - 20px * 1) / 2);  
+    
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2)
+  }
+  
+  .card__imgframe{
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+    background: #bbb;
+    box-sizing: border-box;
+  }
+  
+  .card__textbox{
+    width: 100%;
+    height: auto;
+    padding: 20px 18px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  
+  .card__textbox > * + *{
+    margin-top: 10px;
+  }
+  
+  .card__titletext{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 125%;
+  }
+  
+  .card__overviewtext{
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+/* biography */
+#biography dl{
+    border-top: 1px solid#c8c8c8;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#biography dt{
+    width: 20%;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px;
+}
+
+#biography dd{
+    width: 80%;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px;
+}
+/* sp */
+@media screen and (max-width: 600px) {
+    /* header */
+    .site-title{
+        margin-top: 20px;
+    }
+    #header {
+        flex-direction: column;
+        height: auto;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    #header li{
+        font-size: 0.8rem;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #header li img .icon{
+        width: 20px;
+        margin-top: 5px;
+    }
+
+    /* works */
+    #works ul{
+        flex-direction: column;
+    }
+
+    #works ul li{
+        width: 100%;
+    }
+    /* biography */
+    #biography dl{
+        flex-direction: column;
+    }
+
+    #biography dt{
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    #biography dd{
+        width: 100%;
+        padding-top: 0;
+    }
+}
